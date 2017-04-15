@@ -13,7 +13,7 @@ public class Test {
         ClusterQuartz clusterQuartz = (ClusterQuartz) context.getBean("clusterQuartz");
         clusterQuartz.printUserInfo();
 
-        while (true) {
-        }
+//        while (true) {
+//        }
     }
 }

@@ -10,16 +10,14 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 
 import java.util.Date;
 
-/**
- * @description 一句话描述该文件的用途
- */
+
 public class PrintCurrentTimeJobs extends QuartzJobBean {
     private static final Log LOG_RECORD = LogFactory.getLog(PrintCurrentTimeJobs.class);
 
     @Autowired
     private ClusterQuartz clusterQuartz;
 
-
+    @Override
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         LOG_RECORD.info("begin to execute task," + DateUtils.dateToString(new Date()));
 

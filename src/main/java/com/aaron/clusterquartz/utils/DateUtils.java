@@ -9,9 +9,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-/**
- * Created by madison on 2017/3/21.
- */
+
 public class DateUtils {
     public static final long ONE_DAY_LONG = 86400000;
     private static DateUtils classInstance = new DateUtils();
@@ -23,7 +21,6 @@ public class DateUtils {
 
     /**
      * Timestamp时间类型转换String
-     * Created on 2014-6-6
      * <p>Discription:[]</p>
      *
      * @param time

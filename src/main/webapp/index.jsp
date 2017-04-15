@@ -1,11 +1,6 @@
 <%@ page import="org.springframework.web.context.WebApplicationContext" %>
 <%@ page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: FengHaixin
-  Date: 2016-05-17
-  Time: 9:25
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -15,7 +10,7 @@
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
-
+    out.println(basePath);
     WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(application);
 
     String[] names = context.getBeanDefinitionNames();
